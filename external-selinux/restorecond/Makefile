@@ -16,7 +16,7 @@ SELINUXDIR = $(DESTDIR)/etc/selinux
 DBUSFLAGS = -DHAVE_DBUS $(shell $(PKG_CONFIG) --cflags dbus-glib-1)
 DBUSLIB = $(shell $(PKG_CONFIG) --libs dbus-glib-1)
 
-CFLAGS ?= -g -Werror -Wall -W
+CFLAGS ?= -g  -Wall -W
 override CFLAGS += $(DBUSFLAGS)
 
 USE_PCRE2 ?= n

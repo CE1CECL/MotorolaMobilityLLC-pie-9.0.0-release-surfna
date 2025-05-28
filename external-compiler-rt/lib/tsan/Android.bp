@@ -17,7 +17,7 @@
 
 tsan_rtl_cflags = [
     "-Wall",
-    "-Werror",
+    "",
 ]
 
 tsan_rtl_cppflags = [

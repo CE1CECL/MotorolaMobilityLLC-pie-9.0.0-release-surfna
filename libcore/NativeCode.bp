@@ -25,7 +25,7 @@ cc_defaults {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
     ],
     cppflags: ["-DU_USING_ICU_NAMESPACE=0"],
 

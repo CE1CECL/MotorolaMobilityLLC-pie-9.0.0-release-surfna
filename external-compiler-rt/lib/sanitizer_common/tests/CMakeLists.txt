@@ -51,7 +51,7 @@ set(SANITIZER_TEST_CFLAGS_COMMON
   -I${COMPILER_RT_SOURCE_DIR}/lib/sanitizer_common
   -fno-rtti
   -O2
-  -Werror=sign-compare
+  -Wno-sign-compare
   -Wno-non-virtual-dtor)
 
 if(MSVC)

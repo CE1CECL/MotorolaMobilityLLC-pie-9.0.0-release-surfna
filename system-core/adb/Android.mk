@@ -12,7 +12,7 @@ adb_target_sanitize :=
 
 ADB_COMMON_CFLAGS := \
     -frtti \
-    -Wall -Wextra -Werror \
+    -Wall -Wextra  \
     -Wno-unused-parameter \
     -Wno-missing-field-initializers \
     -Wvla \

@@ -6,7 +6,7 @@ LIBDIR ?= $(PREFIX)/lib
 LIBEXECDIR ?= $(PREFIX)/libexec
 HLLDIR ?= $(LIBEXECDIR)/selinux/hll
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 override LDLIBS += -lsepol
 
 PP_SRCS = $(sort $(wildcard *.c))

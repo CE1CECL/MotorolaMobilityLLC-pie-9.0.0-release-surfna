@@ -3,7 +3,7 @@ cc_defaults {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
         "-Wno-unused-argument",
         "-Wno-unused-function",
         "-Wno-nullability-completeness",

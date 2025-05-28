@@ -37,7 +37,7 @@ LOCAL_CFLAGS := -O2 -g -W -Wall \
 	-Wno-pointer-arith \
 	-Wno-sign-compare \
 	-Wno-unused-parameter \
-	-Werror
+	
 
 # This is a work around for b/18403920
 LOCAL_LDFLAGS := -Wl,--no-gc-sections
@@ -75,6 +75,6 @@ LOCAL_CFLAGS := -O2 -g -W -Wall \
 	-Wno-pointer-arith \
 	-Wno-sign-compare \
 	-Wno-unused-parameter \
-	-Werror
+	
 
 include $(BUILD_SHARED_LIBRARY)

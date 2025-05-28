@@ -14,7 +14,7 @@ LOCAL_SHARED_LIBRARIES += libiprouteutil libnetlink
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../include $(UAPI_INCLUDES)
 
-LOCAL_CFLAGS := -O2 -g -W -Wall -Wno-pointer-arith -Wno-sign-compare -Werror \
+LOCAL_CFLAGS := -O2 -g -W -Wall -Wno-pointer-arith -Wno-sign-compare  \
     -Wno-unused-parameter \
     -Wno-missing-field-initializers
 

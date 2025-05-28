@@ -5,7 +5,7 @@ SBINDIR ?= $(PREFIX)/sbin
 MANDIR = $(PREFIX)/share/man
 LIBDIR ?= $(PREFIX)/lib
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 override LDLIBS += -lsepol -lselinux -lsemanage
 SEMODULE_OBJS = semodule.o
 

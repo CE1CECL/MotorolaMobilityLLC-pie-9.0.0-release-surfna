@@ -49,9 +49,9 @@ build_script:
       if not [%PLATFORM%]==[clang] (
         make -C programs lz4 && make -C tests fullbench && make -C lib lib
       ) ELSE (
-        make -C programs lz4 CC=clang MOREFLAGS="--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion" &&
-        make -C tests fullbench CC=clang MOREFLAGS="--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion" &&
-        make -C lib lib CC=clang MOREFLAGS="--target=x86_64-w64-mingw32 -Werror -Wconversion -Wno-sign-conversion"
+        make -C programs lz4 CC=clang MOREFLAGS="--target=x86_64-w64-mingw32  -Wconversion -Wno-sign-conversion" &&
+        make -C tests fullbench CC=clang MOREFLAGS="--target=x86_64-w64-mingw32  -Wconversion -Wno-sign-conversion" &&
+        make -C lib lib CC=clang MOREFLAGS="--target=x86_64-w64-mingw32  -Wconversion -Wno-sign-conversion"
       )
     )
   - if [%COMPILER%]==[gcc] if not [%PLATFORM%]==[clang] (

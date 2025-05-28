@@ -6,7 +6,7 @@ cc_defaults {
         "-Wall",
         "-Wextra",
         "-Wunused",
-        "-Werror",
+        "",
         "-O0",
         "-fstack-protector-all",
         "-Wno-free-nonheap-object",

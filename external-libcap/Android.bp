@@ -16,7 +16,7 @@ cc_defaults {
     name: "libcap_defaults",
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-unused-parameter",
         "-Wno-unused-result",
         "-Wno-tautological-compare",

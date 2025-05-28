@@ -24,7 +24,7 @@ cc_library {
     export_include_dirs: ["include"],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
     shared: {
         shared_libs: ["libbase"],

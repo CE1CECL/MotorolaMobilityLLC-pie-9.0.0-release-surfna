@@ -191,7 +191,7 @@
     'host_clang%': '<(host_clang)',
     'target_arch%': '<(target_arch)',
     'v8_target_arch%': '<(v8_target_arch)',
-    'werror%': '-Werror',
+    'werror%': '',
     'use_goma%': '<(use_goma)',
     'gomadir%': '<(gomadir)',
     'asan%': '<(asan)',
@@ -549,7 +549,7 @@
             'cflags!': [
               '-pedantic',
               '-Wall',
-              '-Werror',
+              '',
               '-Wextra',
               '-Wshorten-64-to-32',
             ],
@@ -576,7 +576,7 @@
           }],
           ['OS == "mac"', {
             'xcode_settings': {
-              'GCC_TREAT_WARNINGS_AS_ERRORS': 'NO',    # -Werror
+              'GCC_TREAT_WARNINGS_AS_ERRORS': 'NO',    # 
             },
           }],
           ['OS == "win"', {

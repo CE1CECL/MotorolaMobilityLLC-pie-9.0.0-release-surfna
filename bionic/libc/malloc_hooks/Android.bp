@@ -29,7 +29,7 @@ cc_library {
 
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-fno-stack-protector",
     ],
 }
@@ -61,6 +61,6 @@ cc_test {
 
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
 }

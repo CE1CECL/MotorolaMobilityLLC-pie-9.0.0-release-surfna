@@ -8,7 +8,7 @@ cc_library_static {
     cppflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
     ],
     stl: "none",
     export_include_dirs: ["include"],

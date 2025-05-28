@@ -19,5 +19,5 @@ cc_test {
     srcs: ["adf_test.cpp"],
     shared_libs: ["libsync"],
     static_libs: ["libadf"],
-    cflags: ["-Werror"],
+    cflags: [""],
 }

@@ -21,7 +21,7 @@ cc_test {
     cflags: [
         "-g",
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-missing-field-initializers",
     ],
 

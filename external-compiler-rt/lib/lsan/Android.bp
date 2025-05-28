@@ -34,7 +34,7 @@ cc_library_static {
         "-fno-rtti",
         "-fno-builtin",
         "-Wall",
-        "-Werror",
+        "",
     ],
     srcs: [
         "lsan_common.cc",

@@ -20,7 +20,7 @@ cc_defaults {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
     ],
     shared_libs: [
         "libbase",

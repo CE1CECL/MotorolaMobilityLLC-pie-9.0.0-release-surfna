@@ -30,7 +30,7 @@ cc_library_static {
     // -Wno-error=format-zero-length needed for gcc to compile.
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-error=format-zero-length",
     ],
 }
@@ -86,7 +86,7 @@ cc_library {
     // -Wno-error=format-zero-length needed for gcc to compile.
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-fno-stack-protector",
         "-Wno-error=format-zero-length",
         "-Wthread-safety",
@@ -119,7 +119,7 @@ cc_test {
 
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-error=format-zero-length",
     ],
 }

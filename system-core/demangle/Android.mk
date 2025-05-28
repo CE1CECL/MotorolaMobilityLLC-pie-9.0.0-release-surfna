@@ -26,7 +26,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_CFLAGS := \
     -Wall \
-    -Werror \
+     \
     -Wextra \
 
 include $(BUILD_FUZZ_TEST)

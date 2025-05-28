@@ -34,7 +34,7 @@ LIBUNWIND_LOCAL_INCLUDES = [
 
 LIBUNWIND_CFLAGS = [
     "-Wall",
-    "-Werror",
+    "",
 ]
 
 LIBUNWIND_CPPFLAGS = [

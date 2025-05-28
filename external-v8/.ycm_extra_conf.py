@@ -97,7 +97,7 @@ def GetClangCommandFromNinjaForFilename(v8_root, filename):
   # Version of Clang used to compile V8 can be newer then version of
   # libclang that YCM uses for completion. So it's possible that YCM's libclang
   # doesn't know about some used warning options, which causes compilation
-  # warnings (and errors, because of '-Werror');
+  # warnings (and errors, because of '');
   v8_flags.append('-Wno-unknown-warning-option')
 
   # Header files can't be built. Instead, try to match a header file to its

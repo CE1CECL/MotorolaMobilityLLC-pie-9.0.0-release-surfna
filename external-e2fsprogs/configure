@@ -6701,14 +6701,14 @@ fi
   CFLAG_VISIBILITY=
   HAVE_VISIBILITY=0
   if test -n "$GCC"; then
-                { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether the -Werror option is usable" >&5
-$as_echo_n "checking whether the -Werror option is usable... " >&6; }
+                { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether the  option is usable" >&5
+$as_echo_n "checking whether the  option is usable... " >&6; }
     if ${gl_cv_cc_vis_werror+:} false; then :
   $as_echo_n "(cached) " >&6
 else
 
       gl_save_CFLAGS="$CFLAGS"
-      CFLAGS="$CFLAGS -Werror"
+      CFLAGS="$CFLAGS "
       cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 
@@ -6740,7 +6740,7 @@ else
       gl_save_CFLAGS="$CFLAGS"
       CFLAGS="$CFLAGS -fvisibility=hidden"
                                     if test $gl_cv_cc_vis_werror = yes; then
-        CFLAGS="$CFLAGS -Werror"
+        CFLAGS="$CFLAGS "
       fi
       cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */

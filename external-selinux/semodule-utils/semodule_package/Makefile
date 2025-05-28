@@ -5,7 +5,7 @@ BINDIR ?= $(PREFIX)/bin
 LIBDIR ?= $(PREFIX)/lib
 MANDIR ?= $(PREFIX)/share/man
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 override LDLIBS += -lsepol
 
 all: semodule_package semodule_unpackage

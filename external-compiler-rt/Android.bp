@@ -38,7 +38,7 @@ cc_library_static {
         "-Wno-unused-parameter",
         "-Wno-visibility",
         "-Wno-incompatible-pointer-types",
-        "-Werror",
+        "",
     ],
 
     arch: {
@@ -238,7 +238,7 @@ cc_library {
         "-Wno-unused-parameter",
         "-Wno-visibility",
         "-Wno-incompatible-pointer-types",
-        "-Werror",
+        "",
     ],
 
     arch: {

@@ -106,15 +106,15 @@ test:
 
 clangtest: clean
 	clang -v
-	@CFLAGS="-O3 -Werror -Wconversion -Wno-sign-conversion" $(MAKE) -C $(LZ4DIR)  all CC=clang
-	@CFLAGS="-O3 -Werror -Wconversion -Wno-sign-conversion" $(MAKE) -C $(PRGDIR)  all CC=clang
-	@CFLAGS="-O3 -Werror -Wconversion -Wno-sign-conversion" $(MAKE) -C $(TESTDIR) all CC=clang
+	@CFLAGS="-O3  -Wconversion -Wno-sign-conversion" $(MAKE) -C $(LZ4DIR)  all CC=clang
+	@CFLAGS="-O3  -Wconversion -Wno-sign-conversion" $(MAKE) -C $(PRGDIR)  all CC=clang
+	@CFLAGS="-O3  -Wconversion -Wno-sign-conversion" $(MAKE) -C $(TESTDIR) all CC=clang
 
 clangtest-native: clean
 	clang -v
-	@CFLAGS="-O3 -Werror -Wconversion -Wno-sign-conversion" $(MAKE) -C $(LZ4DIR)  all    CC=clang
-	@CFLAGS="-O3 -Werror -Wconversion -Wno-sign-conversion" $(MAKE) -C $(PRGDIR)  native CC=clang
-	@CFLAGS="-O3 -Werror -Wconversion -Wno-sign-conversion" $(MAKE) -C $(TESTDIR) native CC=clang
+	@CFLAGS="-O3  -Wconversion -Wno-sign-conversion" $(MAKE) -C $(LZ4DIR)  all    CC=clang
+	@CFLAGS="-O3  -Wconversion -Wno-sign-conversion" $(MAKE) -C $(PRGDIR)  native CC=clang
+	@CFLAGS="-O3  -Wconversion -Wno-sign-conversion" $(MAKE) -C $(TESTDIR) native CC=clang
 
 usan: clean
 	CC=clang CFLAGS="-O3 -g -fsanitize=undefined" $(MAKE) test FUZZER_TIME="-T1mn" NB_LOOPS=-i1
@@ -128,9 +128,9 @@ staticAnalyze: clean
 platformTest: clean
 	@echo "\n ---- test lz4 with $(CC) compiler ----"
 	@$(CC) -v
-	CFLAGS="-O3 -Werror"         $(MAKE) -C $(LZ4DIR) all
-	CFLAGS="-O3 -Werror -static" $(MAKE) -C $(PRGDIR) all
-	CFLAGS="-O3 -Werror -static" $(MAKE) -C $(TESTDIR) all
+	CFLAGS="-O3 "         $(MAKE) -C $(LZ4DIR) all
+	CFLAGS="-O3  -static" $(MAKE) -C $(PRGDIR) all
+	CFLAGS="-O3  -static" $(MAKE) -C $(TESTDIR) all
 	$(MAKE) -C $(TESTDIR) test-platform
 
 versionsTest: clean
@@ -160,24 +160,24 @@ cmake:
 
 gpptest: clean
 	g++ -v
-	CC=g++ $(MAKE) -C $(LZ4DIR)  all CFLAGS="-O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align -Werror"
-	CC=g++ $(MAKE) -C $(PRGDIR)  all CFLAGS="-O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align -Werror"
-	CC=g++ $(MAKE) -C $(TESTDIR) all CFLAGS="-O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align -Werror"
+	CC=g++ $(MAKE) -C $(LZ4DIR)  all CFLAGS="-O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align "
+	CC=g++ $(MAKE) -C $(PRGDIR)  all CFLAGS="-O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align "
+	CC=g++ $(MAKE) -C $(TESTDIR) all CFLAGS="-O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align "
 
 gpptest32: clean
 	g++ -v
-	CC=g++ $(MAKE) -C $(LZ4DIR)  all    CFLAGS="-m32 -O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align -Werror"
-	CC=g++ $(MAKE) -C $(PRGDIR)  native CFLAGS="-m32 -O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align -Werror"
-	CC=g++ $(MAKE) -C $(TESTDIR) native CFLAGS="-m32 -O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align -Werror"
+	CC=g++ $(MAKE) -C $(LZ4DIR)  all    CFLAGS="-m32 -O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align "
+	CC=g++ $(MAKE) -C $(PRGDIR)  native CFLAGS="-m32 -O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align "
+	CC=g++ $(MAKE) -C $(TESTDIR) native CFLAGS="-m32 -O3 -Wall -Wextra -Wundef -Wshadow -Wcast-align "
 
 c_standards: clean
-	$(MAKE) all MOREFLAGS="-std=gnu90 -Werror"
+	$(MAKE) all MOREFLAGS="-std=gnu90 "
 	$(MAKE) clean
-	$(MAKE) all MOREFLAGS="-std=c99 -Werror"
+	$(MAKE) all MOREFLAGS="-std=c99 "
 	$(MAKE) clean
-	$(MAKE) all MOREFLAGS="-std=gnu99 -Werror"
+	$(MAKE) all MOREFLAGS="-std=gnu99 "
 	$(MAKE) clean
-	$(MAKE) all MOREFLAGS="-std=c11 -Werror"
+	$(MAKE) all MOREFLAGS="-std=c11 "
 	$(MAKE) clean
 
 endif

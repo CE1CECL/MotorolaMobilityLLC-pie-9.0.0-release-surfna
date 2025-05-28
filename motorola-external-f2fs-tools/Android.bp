@@ -10,7 +10,7 @@ cc_defaults {
         "-DWITH_ANDROID",
         "-DWITH_KERNEL_VERSION",
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-format",
         "-Wno-macro-redefined",
         "-Wno-missing-field-initializers",

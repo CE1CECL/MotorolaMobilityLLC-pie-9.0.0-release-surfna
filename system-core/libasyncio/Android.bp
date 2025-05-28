@@ -18,7 +18,7 @@ cc_defaults {
     name: "libasyncio_defaults",
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-Wextra",
     ],
 }

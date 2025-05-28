@@ -67,7 +67,7 @@ endif
 
 ###
 
-CFLAGS := -Wall -Werror -O3 -fomit-frame-pointer
+CFLAGS := -Wall  -O3 -fomit-frame-pointer
 
 CFLAGS.builtins-i386 := $(CFLAGS) -m32
 CFLAGS.builtins-x86_64 := $(CFLAGS) -m64

@@ -9,7 +9,7 @@ SBINDIR ?= $(PREFIX)/sbin
 MANDIR ?= $(PREFIX)/share/man
 LOCALEDIR ?= /usr/share/locale
 SHAREDIR ?= $(PREFIX)/share/sandbox
-override CFLAGS += -DPACKAGE="\"policycoreutils\"" -Wall -Werror -Wextra -W
+override CFLAGS += -DPACKAGE="\"policycoreutils\"" -Wall  -Wextra -W
 override LDLIBS += -lselinux -lcap-ng
 SEUNSHARE_OBJS = seunshare.o
 

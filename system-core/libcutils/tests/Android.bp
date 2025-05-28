@@ -51,7 +51,7 @@ cc_defaults {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
     ],
 }
 

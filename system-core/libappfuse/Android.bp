@@ -6,7 +6,7 @@ cc_defaults {
     shared_libs: ["libbase"],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
 }
 

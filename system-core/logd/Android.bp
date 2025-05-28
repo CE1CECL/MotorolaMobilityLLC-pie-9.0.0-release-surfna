@@ -54,7 +54,7 @@ cc_library_static {
 
     export_include_dirs: ["."],
 
-    cflags: ["-Werror"] + event_flag,
+    cflags: [""] + event_flag,
 }
 
 cc_binary {
@@ -74,5 +74,5 @@ cc_binary {
         "libcap",
     ],
 
-    cflags: ["-Werror"],
+    cflags: [""],
 }

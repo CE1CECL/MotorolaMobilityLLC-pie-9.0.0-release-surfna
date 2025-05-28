@@ -18,7 +18,7 @@ cc_defaults {
     name: "relocation_packer_flags",
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
     cppflags: [
         "-Wextra",

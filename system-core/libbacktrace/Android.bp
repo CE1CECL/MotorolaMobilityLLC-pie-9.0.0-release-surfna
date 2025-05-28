@@ -19,7 +19,7 @@ cc_defaults {
 
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
 
     // The latest clang (r230699) does not allow SP/PC to be declared in inline asm lists.

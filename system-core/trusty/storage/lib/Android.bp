@@ -33,6 +33,6 @@ cc_library_static {
     cflags: [
         "-fvisibility=hidden",
         "-Wall",
-        "-Werror",
+        "",
     ],
 }

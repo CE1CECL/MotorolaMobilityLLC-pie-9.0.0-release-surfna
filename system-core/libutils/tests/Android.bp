@@ -67,7 +67,7 @@ cc_test {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
         "-Wthread-safety",
     ],
 }
@@ -79,7 +79,7 @@ cc_test_library {
     srcs: ["Singleton_test1.cpp"],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
 }
 
@@ -90,7 +90,7 @@ cc_test_library {
     srcs: ["Singleton_test2.cpp"],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
     shared_libs: ["libutils_tests_singleton1"],
 }

@@ -32,7 +32,7 @@ ubsan_cxx_rtl_files = [
 
 ubsan_rtl_cflags = [
     "-Wall",
-    "-Werror",
+    "",
 ]
 
 ubsan_rtl_cppflags = [

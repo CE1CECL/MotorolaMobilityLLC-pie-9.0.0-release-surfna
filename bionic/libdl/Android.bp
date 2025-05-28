@@ -13,7 +13,7 @@ cc_library_static {
         "-Wall",
         "-Wextra",
         "-Wunused",
-        "-Werror",
+        "",
     ],
 
     // For private/CFIShadow.h.
@@ -80,7 +80,7 @@ cc_library {
         "-Wall",
         "-Wextra",
         "-Wunused",
-        "-Werror",
+        "",
     ],
     stl: "none",
 

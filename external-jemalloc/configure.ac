@@ -181,7 +181,7 @@ if test "x$CFLAGS" = "x" ; then
       fi
     fi
     JE_CFLAGS_APPEND([-Wall])
-    JE_CFLAGS_APPEND([-Werror=declaration-after-statement])
+    JE_CFLAGS_APPEND([-Wno-declaration-after-statement])
     JE_CFLAGS_APPEND([-Wshorten-64-to-32])
     JE_CFLAGS_APPEND([-Wsign-compare])
     JE_CFLAGS_APPEND([-pipe])
@@ -520,7 +520,7 @@ if test "x${je_cv_attribute}" = "xyes" ; then
 fi
 dnl Check for tls_model attribute support (clang 3.0 still lacks support).
 SAVED_CFLAGS="${CFLAGS}"
-JE_CFLAGS_APPEND([-Werror])
+JE_CFLAGS_APPEND([])
 JE_CFLAGS_APPEND([-herror_on_warning])
 JE_COMPILABLE([tls_model attribute], [],
               [static __thread int
@@ -536,7 +536,7 @@ else
 fi
 dnl Check for alloc_size attribute support.
 SAVED_CFLAGS="${CFLAGS}"
-JE_CFLAGS_APPEND([-Werror])
+JE_CFLAGS_APPEND([])
 JE_CFLAGS_APPEND([-herror_on_warning])
 JE_COMPILABLE([alloc_size attribute], [#include <stdlib.h>],
               [void *foo(size_t size) __attribute__((alloc_size(1)));],
@@ -547,7 +547,7 @@ if test "x${je_cv_alloc_size}" = "xyes" ; then
 fi
 dnl Check for format(gnu_printf, ...) attribute support.
 SAVED_CFLAGS="${CFLAGS}"
-JE_CFLAGS_APPEND([-Werror])
+JE_CFLAGS_APPEND([])
 JE_CFLAGS_APPEND([-herror_on_warning])
 JE_COMPILABLE([format(gnu_printf, ...) attribute], [#include <stdlib.h>],
               [void *foo(const char *format, ...) __attribute__((format(gnu_printf, 1, 2)));],
@@ -558,7 +558,7 @@ if test "x${je_cv_format_gnu_printf}" = "xyes" ; then
 fi
 dnl Check for format(printf, ...) attribute support.
 SAVED_CFLAGS="${CFLAGS}"
-JE_CFLAGS_APPEND([-Werror])
+JE_CFLAGS_APPEND([])
 JE_CFLAGS_APPEND([-herror_on_warning])
 JE_COMPILABLE([format(printf, ...) attribute], [#include <stdlib.h>],
               [void *foo(const char *format, ...) __attribute__((format(printf, 1, 2)));],
@@ -1411,7 +1411,7 @@ if test "x$enable_syscall" = "x1" ; then
   dnl Check if syscall(2) is usable.  Treat warnings as errors, so that e.g. OS
   dnl X 10.12's deprecation warning prevents use.
   SAVED_CFLAGS="${CFLAGS}"
-  JE_CFLAGS_APPEND([-Werror])
+  JE_CFLAGS_APPEND([])
   JE_COMPILABLE([syscall(2)], [
 #include <sys/syscall.h>
 #include <unistd.h>

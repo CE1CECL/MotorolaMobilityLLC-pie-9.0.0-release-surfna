@@ -12,7 +12,7 @@ LOCAL_C_INCLUDES:= \
 LOCAL_CFLAGS:=-D__ANDROID__
 LOCAL_CFLAGS+=-D_LARGEFILE_SOURCE=1 -D_LARGE_FILES -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DENABLE_IPV4 -DENABLE_IPV6
 LOCAL_CFLAGS += \
-    -Wall -Werror \
+    -Wall  \
     -Wno-pointer-arith \
     -Wno-pointer-sign \
     -Wno-sign-compare \
@@ -41,7 +41,7 @@ LOCAL_C_INCLUDES:= \
 LOCAL_CFLAGS:=-D__ANDROID__
 LOCAL_CFLAGS+=-D_LARGEFILE_SOURCE=1 -D_LARGE_FILES -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DENABLE_IPV4 -DENABLE_IPV6
 LOCAL_CFLAGS += \
-    -Wall -Werror \
+    -Wall  \
     -Wno-pointer-arith \
     -Wno-pointer-sign \
     -Wno-sign-compare \

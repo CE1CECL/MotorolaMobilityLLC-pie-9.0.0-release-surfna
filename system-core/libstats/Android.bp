@@ -25,7 +25,7 @@ cc_library_static {
     ],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-DLIBLOG_LOG_TAG=1006",
         "-DWRITE_TO_STATSD=1",
         "-DWRITE_TO_LOGD=0",

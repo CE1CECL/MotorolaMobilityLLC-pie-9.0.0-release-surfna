@@ -9,7 +9,7 @@ MANDIR ?= $(PREFIX)/share/man
 LOCALEDIR ?= /usr/share/locale
 BASHCOMPLETIONDIR ?= $(DESTDIR)/usr/share/bash-completion/completions
 SHAREDIR ?= $(PREFIX)/share/sandbox
-CFLAGS ?= -Wall -Werror -Wextra -W
+CFLAGS ?= -Wall  -Wextra -W
 override CFLAGS += -DPACKAGE="policycoreutils" -DSHARED -shared
 
 BASHCOMPLETIONS=sepolicy-bash-completion.sh

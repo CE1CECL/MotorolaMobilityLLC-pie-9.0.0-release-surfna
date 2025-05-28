@@ -122,7 +122,7 @@ libunwind specific options
 
   **Default**: ``ON``
 
-  Compile with -Werror
+  Compile with 
 
 .. option:: LIBUNWIND_ENABLE_SHARED:BOOL
 

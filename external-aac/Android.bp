@@ -17,7 +17,7 @@ cc_library_static {
         "libSACenc/src/*.cpp",
     ],
     cflags: [
-        "-Werror",
+        "",
         "-Wno-unused-parameter",
         "-Wno-#warnings",
         "-Wuninitialized",

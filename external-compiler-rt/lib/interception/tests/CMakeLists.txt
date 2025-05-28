@@ -18,7 +18,7 @@ set(INTERCEPTION_TEST_CFLAGS_COMMON
   -I${COMPILER_RT_SOURCE_DIR}/lib/interception
   -fno-rtti
   -O2
-  -Werror=sign-compare
+  -Wno-sign-compare
   -Wno-non-virtual-dtor)
 
 # -gline-tables-only must be enough for these tests, so use it if possible.

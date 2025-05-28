@@ -13,7 +13,7 @@
 //								       Richard Haines <richard_c_haines@btinternet.com>
 //    - Not cast the workspace from a byte array to a CHAR64LONG16 due to allignment isses.
 //      Fixes:
-//        sha1.c:73:33: error: cast from 'uint8_t *' (aka 'unsigned char *') to 'CHAR64LONG16 *' increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+//        sha1.c:73:33: error: cast from 'uint8_t *' (aka 'unsigned char *') to 'CHAR64LONG16 *' increases required alignment from 1 to 4 [,-Wcast-align]
 //             CHAR64LONG16*       block = (CHAR64LONG16*) workspace;
 //                                                                     William Roberts <william.c.roberts@intel.com>
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

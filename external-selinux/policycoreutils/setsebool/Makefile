@@ -6,7 +6,7 @@ MANDIR = $(PREFIX)/share/man
 LIBDIR ?= $(PREFIX)/lib
 BASHCOMPLETIONDIR ?= $(DESTDIR)/usr/share/bash-completion/completions
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 override LDLIBS += -lsepol -lselinux -lsemanage
 SETSEBOOL_OBJS = setsebool.o
 

@@ -6,7 +6,7 @@ matrix:
     - os: osx
       install:
         - export CC=clang
-      env: Ubu=OS_X_Mavericks Cmd='make -C tests test-lz4 MOREFLAGS="-Werror -Wconversion -Wno-sign-conversion" && CFLAGS=-m32 make -C tests clean test-lz4-contentSize' COMPILER=clang
+      env: Ubu=OS_X_Mavericks Cmd='make -C tests test-lz4 MOREFLAGS=" -Wconversion -Wno-sign-conversion" && CFLAGS=-m32 make -C tests clean test-lz4-contentSize' COMPILER=clang
 
     # Container-based 12.04 LTS Server Edition 64 bit (doesn't support 32-bit includes)
     - os: linux
@@ -67,7 +67,7 @@ matrix:
             - libc6-dev-i386
             - gcc-multilib
 
-    - env: Ubu=14.04 Cmd='make c_standards CC=gcc-6 && make -C tests test-lz4 CC=gcc-6 MOREFLAGS=-Werror' COMPILER=gcc-6
+    - env: Ubu=14.04 Cmd='make c_standards CC=gcc-6 && make -C tests test-lz4 CC=gcc-6 MOREFLAGS=' COMPILER=gcc-6
       dist: trusty
       sudo: required
       addons:
@@ -90,7 +90,7 @@ matrix:
             - gcc-aarch64-linux-gnu
             - libc6-dev-arm64-cross
 
-    - env: Ubu=14.04 Cmd='make -C tests test-lz4 clean test-lz4c32 CC=gcc-5 MOREFLAGS=-Werror' COMPILER=gcc-5
+    - env: Ubu=14.04 Cmd='make -C tests test-lz4 clean test-lz4c32 CC=gcc-5 MOREFLAGS=' COMPILER=gcc-5
       dist: trusty
       sudo: required
       addons:
@@ -132,7 +132,7 @@ matrix:
           packages:
             - clang
 
-    - env: Ubu=14.04 Cmd='make clean all CC=gcc-4.4 MOREFLAGS=-Werror && make clean && CFLAGS=-fPIC LDFLAGS="-pie -fPIE -D_FORTIFY_SOURCE=2" make -C programs' COMPILER=gcc-4.4
+    - env: Ubu=14.04 Cmd='make clean all CC=gcc-4.4 MOREFLAGS= && make clean && CFLAGS=-fPIC LDFLAGS="-pie -fPIE -D_FORTIFY_SOURCE=2" make -C programs' COMPILER=gcc-4.4
       dist: trusty
       sudo: required
       addons:

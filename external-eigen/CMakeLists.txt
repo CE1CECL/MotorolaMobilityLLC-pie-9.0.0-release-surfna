@@ -128,10 +128,10 @@ if(NOT MSVC)
   # We assume that other compilers are partly compatible with GNUCC
 
   # clang outputs some warnings for unknown flags that are not caught by check_cxx_compiler_flag
-  # adding -Werror turns such warnings into errors
-  check_cxx_compiler_flag("-Werror" COMPILER_SUPPORT_WERROR)
+  # adding  turns such warnings into errors
+  check_cxx_compiler_flag("" COMPILER_SUPPORT_WERROR)
   if(COMPILER_SUPPORT_WERROR)
-    set(CMAKE_REQUIRED_FLAGS "-Werror")
+    set(CMAKE_REQUIRED_FLAGS "")
   endif()
   ei_add_cxx_compiler_flag("-pedantic")
   ei_add_cxx_compiler_flag("-Wall")

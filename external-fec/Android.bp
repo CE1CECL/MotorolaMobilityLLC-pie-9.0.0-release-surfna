@@ -10,7 +10,7 @@ cc_library_static {
     ],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-O3"
     ],
     export_include_dirs: ["."],

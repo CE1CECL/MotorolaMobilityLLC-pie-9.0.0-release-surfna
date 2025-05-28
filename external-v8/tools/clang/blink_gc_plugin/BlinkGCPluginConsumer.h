@@ -68,7 +68,7 @@ class BlinkGCPluginConsumer : public clang::ASTConsumer {
 
   void DumpClass(RecordInfo* info);
 
-  // Adds either a warning or error, based on the current handling of -Werror.
+  // Adds either a warning or error, based on the current handling of .
   clang::DiagnosticsEngine::Level getErrorLevel();
 
   std::string GetLocString(clang::SourceLocation loc);

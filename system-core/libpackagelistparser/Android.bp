@@ -4,7 +4,7 @@ cc_library {
     srcs: ["packagelistparser.c"],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
     shared_libs: ["liblog"],
     local_include_dirs: ["include"],

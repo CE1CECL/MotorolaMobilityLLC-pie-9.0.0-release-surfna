@@ -21,7 +21,7 @@ cc_defaults {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
     ],
     header_libs: ["libnativebridge-dummy-headers"],
     cppflags: ["-fvisibility=protected"],

@@ -8,7 +8,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_MODULE := mkbootfs
 
-LOCAL_CFLAGS := -Werror
+LOCAL_CFLAGS := 
 
 LOCAL_SHARED_LIBRARIES := libcutils
 

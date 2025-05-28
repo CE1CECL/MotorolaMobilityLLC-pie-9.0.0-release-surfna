@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-// -Werror is on whether we like it or not, and we're intentionally doing awful
+//  is on whether we like it or not, and we're intentionally doing awful
 // things in this file. GCC is dumb and doesn't have a specific error class for
-// the fortify failures (it's just -Werror), so we can't use anything more
+// the fortify failures (it's just ), so we can't use anything more
 // constrained than disabling all the warnings in the file :( It also won't let
 // us use system_header in a .cpp file, so we have to #include this from
 // fortify_test_main.cpp.

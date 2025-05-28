@@ -8,7 +8,7 @@ cc_library_static {
     ],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
 
     // We need to access Bionic private headers in the linker.
@@ -47,7 +47,7 @@ cc_object {
         "-Wall",
         "-Wextra",
         "-Wno-unused",
-        "-Werror",
+        "",
     ],
 
     srcs: [
@@ -148,7 +148,7 @@ cc_binary {
         "-Wall",
         "-Wextra",
         "-Wunused",
-        "-Werror",
+        "",
     ],
 
     // TODO: split out the asflags.
@@ -159,7 +159,7 @@ cc_binary {
         "-Wall",
         "-Wextra",
         "-Wunused",
-        "-Werror",
+        "",
     ],
 
     product_variables: {
@@ -265,7 +265,7 @@ cc_library {
         "-Wall",
         "-Wextra",
         "-Wunused",
-        "-Werror",
+        "",
     ],
     stl: "none",
 

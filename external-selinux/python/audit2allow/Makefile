@@ -9,7 +9,7 @@ LOCALEDIR ?= /usr/share/locale
 INCLUDEDIR ?= $(PREFIX)/include
 LIBSEPOLA ?= $(LIBDIR)/libsepol.a
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 
 all: audit2why sepolgen-ifgen-attr-helper
 

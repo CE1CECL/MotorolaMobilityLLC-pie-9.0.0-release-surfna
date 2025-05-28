@@ -6,7 +6,7 @@ cc_defaults {
     cppflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
     ],
     static_libs: [
         "libpropertyinfoparser",

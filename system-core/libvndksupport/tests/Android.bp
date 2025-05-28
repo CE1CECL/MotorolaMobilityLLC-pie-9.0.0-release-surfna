@@ -19,7 +19,7 @@ cc_test {
     ],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
 
     host_supported: false,

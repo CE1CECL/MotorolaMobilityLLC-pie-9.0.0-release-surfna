@@ -40,7 +40,7 @@ their implementation.
 
 On the other hand, in Android, -Wunused-parameter is enabled by default.
 Thus, if such a project includes header files from libchrome, it could cause
-a compile error (by the warning and "-Werror").
+a compile error (by the warning and "").
 
 To avoid such a situation, libchrome exports include files wrapped by the
 pragmas as follows.

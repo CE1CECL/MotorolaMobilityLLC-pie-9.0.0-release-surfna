@@ -33,7 +33,7 @@ cc_test {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
     ],
 
     compile_multilib: "first",

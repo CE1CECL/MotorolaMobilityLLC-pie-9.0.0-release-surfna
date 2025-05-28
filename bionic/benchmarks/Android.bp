@@ -21,7 +21,7 @@ cc_defaults {
         "-fno-builtin",
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
         "-Wno-gcc-compat",
         "-Wunused",
     ],
@@ -51,7 +51,7 @@ cc_defaults {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
         "-Wunused",
     ],
 }

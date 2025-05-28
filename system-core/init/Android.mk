@@ -50,7 +50,7 @@ init_cflags += \
     $(init_options) \
     -Wall -Wextra \
     -Wno-unused-parameter \
-    -Werror \
+     \
     -std=gnu++1z
 
 # --

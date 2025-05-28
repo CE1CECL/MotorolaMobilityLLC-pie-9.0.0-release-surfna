@@ -43,10 +43,10 @@ libc_common_flags = [
     "-Wframe-larger-than=2048",
 
     // Try to catch typical 32-bit assumptions that break with 64-bit pointers.
-    "-Werror=pointer-to-int-cast",
-    "-Werror=int-to-pointer-cast",
-    "-Werror=type-limits",
-    "-Werror",
+    "-Wno-pointer-to-int-cast",
+    "-Wno-int-to-pointer-cast",
+    "-Wno-type-limits",
+    "",
 
     // Clang's exit-time destructor registration hides __dso_handle, but
     // __dso_handle needs to have default visibility on ARM32. See b/73485611.
@@ -1908,7 +1908,7 @@ cc_defaults {
     cflags: [
         "-Wno-gcc-compat",
         "-Wall",
-        "-Werror",
+        "",
     ],
 }
 

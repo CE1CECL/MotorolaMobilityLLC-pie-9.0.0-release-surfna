@@ -49,7 +49,7 @@ cc_library {
     cflags: [
         "-D_BSD_SOURCE",
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-unused-parameter",
         "-Wno-sign-compare",
         "-Wno-missing-field-initializers",

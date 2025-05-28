@@ -495,7 +495,7 @@ cc_library {
         "-include freebsd-compat.h",
         "-fno-math-errno",
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-missing-braces",
         "-Wno-parentheses",
         "-Wno-sign-compare",

@@ -20,7 +20,7 @@ NAMESPACE_PRIV ?= n
 LSPP_PRIV ?= n
 VERSION = $(shell cat ../VERSION)
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 EXTRA_OBJS =
 override CFLAGS += -DVERSION=\"$(VERSION)\" -DUSE_NLS -DLOCALEDIR="\"$(LOCALEDIR)\"" -DPACKAGE="\"policycoreutils\""
 override LDLIBS += -lselinux

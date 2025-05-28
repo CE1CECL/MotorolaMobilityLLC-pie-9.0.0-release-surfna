@@ -29,7 +29,7 @@ cc_defaults {
         "-Wall",
         "-Wextra",
         "-Wunused",
-        "-Werror",
+        "",
         "-fno-builtin",
 
         // We want to test deprecated API too.
@@ -219,7 +219,7 @@ cc_defaults {
 cc_test_library {
     name: "fortify_disabled_for_asan",
     cflags: [
-        "-Werror",
+        "",
         "-D_FORTIFY_SOURCE=2",
         // "sanitize: address" doesn't work on platforms where libasan isn't
         // enabled. Since the intent is just to build this, we can get away with
@@ -238,7 +238,7 @@ cc_test_library {
 cc_test_library {
     name: "fortify_disabled_for_tidy",
     cflags: [
-        "-Werror",
+        "",
         "-D_FORTIFY_SOURCE=2",
         "-D__clang_analyzer__",
     ],

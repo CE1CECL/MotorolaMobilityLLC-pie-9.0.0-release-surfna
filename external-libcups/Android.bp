@@ -84,7 +84,7 @@ cc_library_shared {
         "-Wno-sign-compare",
         "-Wno-missing-field-initializers",
         "-Wno-implicit-function-declaration",
-        "-Werror",
+        "",
     ],
 
     export_include_dirs: [

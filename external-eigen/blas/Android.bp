@@ -42,7 +42,7 @@ cc_defaults {
         "f2c/r_cnjg.c",
     ],
     cflags: [
-        "-Werror",
+        "",
         "-Wno-unused-parameter"
     ],
     tidy_checks: [

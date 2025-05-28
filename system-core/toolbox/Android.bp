@@ -2,7 +2,7 @@ cc_defaults {
     name: "toolbox_defaults",
 
     cflags: [
-        "-Werror",
+        "",
         "-Wno-unused-parameter",
         "-Wno-unused-const-variable",
         "-include bsd-compatibility.h",

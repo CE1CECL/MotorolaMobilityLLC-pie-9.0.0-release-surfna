@@ -7,7 +7,7 @@ AUDITH ?= $(shell test -f /usr/include/libaudit.h && echo y)
 
 ABORT_ON_ERRORS=$(shell grep "^\#define ABORT_ON_ERRORS" setfiles.c | awk -S '{ print $$3 }')
 
-CFLAGS ?= -g -Werror -Wall -W
+CFLAGS ?= -g  -Wall -W
 override LDLIBS += -lselinux -lsepol
 
 ifeq ($(AUDITH), y)

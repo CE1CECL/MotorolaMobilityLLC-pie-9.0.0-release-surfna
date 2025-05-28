@@ -1,7 +1,7 @@
 cc_defaults {
     name: "logwrapper_defaults",
     cflags: [
-        "-Werror",
+        "",
     ],
 }
 

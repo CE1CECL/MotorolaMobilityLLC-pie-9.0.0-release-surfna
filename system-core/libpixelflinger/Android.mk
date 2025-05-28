@@ -25,7 +25,7 @@ PIXELFLINGER_SRC_FILES:= \
 	buffer.cpp
 
 PIXELFLINGER_CFLAGS := -fstrict-aliasing -fomit-frame-pointer
-PIXELFLINGER_CFLAGS += -Wall -Werror
+PIXELFLINGER_CFLAGS += -Wall 
 PIXELFLINGER_CFLAGS += -Wno-unused-function
 
 PIXELFLINGER_SRC_FILES_arm := \

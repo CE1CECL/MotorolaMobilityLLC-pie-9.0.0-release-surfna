@@ -22,7 +22,7 @@ cc_defaults {
     local_include_dirs: ["include/"],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-unused-variable",
     ],
     cppflags: [

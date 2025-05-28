@@ -4,7 +4,7 @@ SBINDIR ?= $(DESTDIR)/sbin
 MANDIR ?= $(PREFIX)/share/man
 LOCALEDIR ?= /usr/share/locale
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 override CFLAGS += $(LDFLAGS) -DUSE_NLS -DLOCALEDIR="\"$(LOCALEDIR)\"" -DPACKAGE="\"policycoreutils\""
 override LDLIBS += -lsepol -lselinux
 

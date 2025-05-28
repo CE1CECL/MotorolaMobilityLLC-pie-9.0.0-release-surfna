@@ -20,7 +20,7 @@ LIBMAP=libsepol.map
 LIBSO=$(TARGET).$(LIBVERSION)
 OBJS= $(patsubst %.c,%.o,$(sort $(wildcard *.c)))
 LOBJS= $(patsubst %.c,%.lo,$(sort $(wildcard *.c)))
-CFLAGS ?= -Werror -Wall -W -Wundef -Wshadow -Wmissing-format-attribute -O2
+CFLAGS ?=  -Wall -W -Wundef -Wshadow -Wmissing-format-attribute -O2
 
 override CFLAGS += -I. -I../include -D_GNU_SOURCE
 
@@ -63,10 +63,10 @@ endif
 
 ifneq ($(DISABLE_CIL),y)
 $(CILDIR)/src/cil_lexer.o: $(CILDIR)/src/cil_lexer.c
-	$(CC) $(filter-out -Werror, $(CFLAGS)) -fPIC -c -o $@ $<
+	$(CC) $(filter-out , $(CFLAGS)) -fPIC -c -o $@ $<
 
 $(CILDIR)/src/cil_lexer.lo: $(CILDIR)/src/cil_lexer.c
-	$(CC) $(filter-out -Werror, $(CFLAGS)) -fPIC -DSHARED -c -o $@ $<
+	$(CC) $(filter-out , $(CFLAGS)) -fPIC -DSHARED -c -o $@ $<
 
 $(CILDIR)/src/cil_lexer.c: $(CILDIR)/src/cil_lexer.l
 	$(LEX) -o $@ $<

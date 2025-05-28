@@ -11,7 +11,7 @@ LOCAL_MODULE := dnsmasq
 LOCAL_C_INCLUDES := external/dnsmasq/src
 
 LOCAL_CFLAGS := -O2 -g -W -Wall -D__ANDROID__ -DIPV6 -DNO_SCRIPT -D_BSD_SOURCE \
-                -Wno-unused-variable -Wno-unused-parameter -Werror
+                -Wno-unused-variable -Wno-unused-parameter 
 LOCAL_SYSTEM_SHARED_LIBRARIES := libc
 LOCAL_SHARED_LIBRARIES := libcutils liblog
 

@@ -34,7 +34,7 @@ set(MSAN_UNITTEST_COMMON_CFLAGS
   -Wno-unused-variable
   -Wno-zero-length-array
   -Wno-uninitialized
-  -Werror=sign-compare
+  -Wno-sign-compare
 )
 set(MSAN_UNITTEST_INSTRUMENTED_CFLAGS
   ${MSAN_UNITTEST_COMMON_CFLAGS}

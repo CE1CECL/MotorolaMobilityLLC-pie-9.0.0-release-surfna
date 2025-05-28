@@ -11,7 +11,7 @@ e2fsdroid_src_files := \
         perms.c \
         basefs_allocator.c \
 
-e2fsdroid_cflags := -W -Wall -Werror -Wno-error=macro-redefined
+e2fsdroid_cflags := -W -Wall  -Wno-error=macro-redefined
 
 e2fsdroid_static_libraries := \
         libext2_com_err \

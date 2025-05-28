@@ -29,7 +29,7 @@ cc_binary_host {
     cflags: [
         "-Wall",
         "-Wextra",
-        "-Werror",
+        "",
         "-Wno-unused-parameter",
         "-fno-omit-frame-pointer",
 

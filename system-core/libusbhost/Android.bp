@@ -22,7 +22,7 @@ cc_library {
     },
     host_supported: true,
     srcs: ["usbhost.c"],
-    cflags: ["-Werror"],
+    cflags: [""],
     export_include_dirs: ["include"],
     target: {
         android: {

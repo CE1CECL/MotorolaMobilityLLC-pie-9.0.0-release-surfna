@@ -25,7 +25,7 @@ LIBBASE=$(shell basename $(LIBDIR))
 DEFAULT_SEMANAGE_CONF_LOCATION=$(DESTDIR)/etc/selinux/semanage.conf
 
 ifeq ($(DEBUG),1)
-	export CFLAGS = -g3 -O0 -gdwarf-2 -fno-strict-aliasing -Wall -Wshadow -Werror
+	export CFLAGS = -g3 -O0 -gdwarf-2 -fno-strict-aliasing -Wall -Wshadow 
 	export LDFLAGS = -g
 endif
 
@@ -56,7 +56,7 @@ SRCS= $(filter-out $(GENERATED),$(sort $(wildcard *.c)))
 
 OBJS= $(patsubst %.c,%.o,$(SRCS)) conf-scan.o conf-parse.o
 LOBJS= $(patsubst %.c,%.lo,$(SRCS)) conf-scan.lo conf-parse.lo
-CFLAGS ?= -Werror -Wall -W -Wundef -Wshadow -Wmissing-noreturn -Wmissing-format-attribute
+CFLAGS ?=  -Wall -W -Wundef -Wshadow -Wmissing-noreturn -Wmissing-format-attribute
 
 SWIG_CFLAGS += -Wno-error -Wno-unused-but-set-variable -Wno-unused-variable -Wno-shadow \
 		-Wno-unused-parameter
@@ -115,16 +115,16 @@ conf-parse.h: conf-parse.c
 	$(CC) $(CFLAGS) -fPIC -DSHARED -c -o $@ $<
 
 conf-parse.o:  conf-parse.c
-	$(CC) $(filter-out -Werror, $(CFLAGS)) -c -o $@ $<
+	$(CC) $(filter-out , $(CFLAGS)) -c -o $@ $<
 
 conf-parse.lo:  conf-parse.c
-	$(CC) $(filter-out -Werror, $(CFLAGS)) -fPIC -DSHARED -c -o $@ $<
+	$(CC) $(filter-out , $(CFLAGS)) -fPIC -DSHARED -c -o $@ $<
 
 conf-scan.o:  conf-scan.c
-	$(CC) $(filter-out -Werror, $(CFLAGS)) -c -o $@ $<
+	$(CC) $(filter-out , $(CFLAGS)) -c -o $@ $<
 
 conf-scan.lo:  conf-scan.c
-	$(CC) $(filter-out -Werror, $(CFLAGS)) -fPIC -DSHARED -c -o $@ $<
+	$(CC) $(filter-out , $(CFLAGS)) -fPIC -DSHARED -c -o $@ $<
 
 $(SWIGCOUT): $(SWIGIF)
 	$(SWIG) $<

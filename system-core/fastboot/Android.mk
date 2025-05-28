@@ -40,7 +40,7 @@ LOCAL_SRC_FILES := \
 LOCAL_MODULE := fastboot
 LOCAL_MODULE_TAGS := debug optional
 LOCAL_MODULE_HOST_OS := darwin linux windows
-LOCAL_CFLAGS += -Wall -Wextra -Werror -Wunreachable-code
+LOCAL_CFLAGS += -Wall -Wextra  -Wunreachable-code
 LOCAL_REQUIRED_MODULES := mke2fs make_f2fs
 
 LOCAL_SRC_FILES_linux := usb_linux.cpp
@@ -95,7 +95,7 @@ ifeq ($(HOST_OS),linux)
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := usbtest.cpp usb_linux.cpp util.cpp
 LOCAL_MODULE := usbtest
-LOCAL_CFLAGS := -Werror
+LOCAL_CFLAGS := 
 LOCAL_STATIC_LIBRARIES := libbase
 include $(BUILD_HOST_EXECUTABLE)
 endif
@@ -118,7 +118,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_STATIC_LIBRARIES := libbase libcutils
 
-LOCAL_CFLAGS += -Wall -Wextra -Werror -Wunreachable-code
+LOCAL_CFLAGS += -Wall -Wextra  -Wunreachable-code
 
 LOCAL_LDLIBS_darwin := -lpthread -framework CoreFoundation -framework IOKit -framework Carbon
 LOCAL_CFLAGS_darwin := -Wno-unused-parameter

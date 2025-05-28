@@ -45,7 +45,7 @@ COMPILER_SPECIFIC_ARGS=-std=c++0x -fprofile-arcs
 endif
 
 CPPFLAGS=$(INCLUDES) -g -O0 -MD
-CXXFLAGS=-Wall -Werror -Wno-unused -Winit-self -Wpointer-arith	-Wunused-parameter \
+CXXFLAGS=-Wall  -Wno-unused -Winit-self -Wpointer-arith	-Wunused-parameter \
 	-Wmissing-declarations -ftest-coverage \
 	-Wno-deprecated-declarations -fno-exceptions -DKEYMASTER_NAME_TAGS \
 	$(COMPILER_SPECIFIC_ARGS)

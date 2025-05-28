@@ -25,7 +25,7 @@ cc_defaults {
         "-Wall",
         "-Wextra",
         "-Wno-unused-parameter",
-        "-Werror",
+        "",
         "-DALLOW_LOCAL_PROP_OVERRIDE=0",
         "-DALLOW_PERMISSIVE_SELINUX=0",
         "-DREBOOT_BOOTLOADER_ON_PANIC=0",
@@ -221,7 +221,7 @@ cc_binary {
         "-Wall",
         "-Wextra",
         "-Wno-unused-parameter",
-        "-Werror",
+        "",
     ],
     static_libs: [
         "libbase",

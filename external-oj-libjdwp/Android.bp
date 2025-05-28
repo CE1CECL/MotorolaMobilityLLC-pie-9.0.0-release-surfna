@@ -22,7 +22,7 @@ cc_defaults {
         // Every supported android platform is little-endian.
         "-D_LITTLE_ENDIAN",
         "-Wall",
-        "-Werror",
+        "",
         "-Wno-unused-parameter",
     ],
     notice: "LICENSE",

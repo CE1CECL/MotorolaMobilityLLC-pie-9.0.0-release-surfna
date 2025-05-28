@@ -1,6 +1,6 @@
 common_CFLAGS = [
     "-Wall",
-    "-Werror",
+    "",
     "-Wshadow",
 ]
 

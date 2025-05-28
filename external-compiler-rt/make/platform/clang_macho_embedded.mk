@@ -60,7 +60,7 @@ Configs += $(if $(UniversalArchs.soft_pic),soft_pic)
 UniversalArchs.hard_pic := $(call CheckArches,armv7em armv7 i386 x86_64,hard_pic)
 Configs += $(if $(UniversalArchs.hard_pic),hard_pic)
 
-CFLAGS := -Wall -Werror -Oz -fomit-frame-pointer -ffreestanding
+CFLAGS := -Wall  -Oz -fomit-frame-pointer -ffreestanding
 
 PIC_CFLAGS := -fPIC
 STATIC_CFLAGS := -static

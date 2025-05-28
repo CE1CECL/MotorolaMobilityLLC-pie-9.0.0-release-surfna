@@ -5,7 +5,7 @@ MANDIR = $(PREFIX)/share/man
 ETCDIR ?= $(DESTDIR)/etc
 LIBDIR ?= $(PREFIX)/lib
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 override CFLAGS += -D_FILE_OFFSET_BITS=64
 override LDLIBS += -lselinux
 

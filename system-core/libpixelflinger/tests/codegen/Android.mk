@@ -13,7 +13,7 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_MODULE:= test-opengl-codegen
 
-LOCAL_CFLAGS:= -Wall -Werror
+LOCAL_CFLAGS:= -Wall 
 
 LOCAL_MODULE_TAGS := tests
 

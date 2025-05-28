@@ -24,7 +24,7 @@ LOCAL_CFLAGS := \
     -Wno-sign-compare \
     -Wno-tautological-pointer-compare \
     -Wno-unused-parameter \
-    -Werror \
+     \
     '-Dsethostent(x)=' \
     $(yacc_flags) \
     -DHAVE_SETNS

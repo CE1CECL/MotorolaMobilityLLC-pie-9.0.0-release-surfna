@@ -2,7 +2,7 @@ cc_library {
     name: "libarm-optimized-routines",
     host_supported: true,
     cflags: [
-        "-Werror",
+        "",
         "-O2",
         "-DWANT_ROUNDING=0",
         "-DWANT_ERRNO=0",
@@ -62,7 +62,7 @@ cc_test {
     name: "mathtest",
     gtest: false,
     host_supported: true,
-    cflags: ["-Werror", "-Wno-missing-braces"],
+    cflags: ["", "-Wno-missing-braces"],
     srcs: [
       "math/single/e_rem_pio2.c",
       "test/mathtest.c"

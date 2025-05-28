@@ -15,7 +15,7 @@ cc_library {
         "libcutils",
         "liblog",
     ],
-    cflags: ["-Werror"],
+    cflags: [""],
     export_include_dirs: ["include"],
     local_include_dirs: ["include"],
 

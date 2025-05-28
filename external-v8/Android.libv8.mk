@@ -8,7 +8,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libv8
 LOCAL_MODULE_CLASS := STATIC_LIBRARIES
 
-LOCAL_CFLAGS := -Wall -Werror
+LOCAL_CFLAGS := -Wall 
 
 LOCAL_WHOLE_STATIC_LIBRARIES := libv8base libv8platform libv8sampler libv8src libv8gen v8peephole
 

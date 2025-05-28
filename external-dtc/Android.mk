@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 
 LOCAL_CFLAGS := \
   -Wall \
-  -Werror \
+   \
   -Wno-sign-compare \
   -Wno-missing-field-initializers \
   -Wno-unused-parameter

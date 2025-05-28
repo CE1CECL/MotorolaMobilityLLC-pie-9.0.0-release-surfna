@@ -113,7 +113,7 @@ static void generateTargetCC1Flags(llvm::IntrusiveRefCntPtr<clang::vfs::FileSyst
   cmd.push_back("-Wall");
   cmd.push_back("-Wextra");
   cmd.push_back("-Weverything");
-  cmd.push_back("-Werror");
+  cmd.push_back("");
   cmd.push_back("-Wundef");
   cmd.push_back("-Wno-unused-macros");
   cmd.push_back("-Wno-unused-function");

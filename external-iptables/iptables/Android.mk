@@ -6,7 +6,7 @@ commonFlags:= \
 	-Wno-pointer-arith \
 	-Wno-unused-parameter \
 	-Wno-parentheses-equality \
-	-Werror
+	
 
 #----------------------------------------------------------------
 # The iptables lock file

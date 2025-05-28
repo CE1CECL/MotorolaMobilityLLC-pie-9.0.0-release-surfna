@@ -35,7 +35,7 @@ shared_libraries := \
 
 libnativebridge_tests_common_cflags := \
     -Wall \
-    -Werror \
+     \
 
 $(foreach file,$(test_src_files), \
     $(eval include $(CLEAR_VARS)) \

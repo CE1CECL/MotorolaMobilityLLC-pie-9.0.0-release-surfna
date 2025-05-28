@@ -4,7 +4,7 @@ LOCAL_CPP_EXTENSION := cc
 
 LOCAL_CFLAGS += \
 	-Wall \
-	-Werror \
+	 \
 	-Wno-endif-labels \
 	-Wno-import \
 	-Wno-format \

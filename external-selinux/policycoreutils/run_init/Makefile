@@ -8,7 +8,7 @@ LOCALEDIR ?= /usr/share/locale
 PAMH ?= $(shell test -f /usr/include/security/pam_appl.h && echo y)
 AUDITH ?= $(shell test -f /usr/include/libaudit.h && echo y)
 
-CFLAGS ?= -Werror -Wall -W
+CFLAGS ?=  -Wall -W
 override CFLAGS += -DUSE_NLS -DLOCALEDIR="\"$(LOCALEDIR)\"" -DPACKAGE="\"policycoreutils\""
 override LDLIBS += -lselinux
 ifeq ($(PAMH), y)

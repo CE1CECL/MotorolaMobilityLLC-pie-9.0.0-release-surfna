@@ -38,7 +38,7 @@ SRCS="
 
 if [ "`uname -a | grep Linux`" != "" ]; then
 	SUFFIX="linux_amd64"
-	OSCFLAGS="-fPIC -ffreestanding -Wno-maybe-uninitialized -Wno-unused-const-variable -Werror -Wno-unknown-warning-option"
+	OSCFLAGS="-fPIC -ffreestanding -Wno-maybe-uninitialized -Wno-unused-const-variable  -Wno-unknown-warning-option"
 	OSLDFLAGS="-lpthread -fPIC -fpie"
 	SRCS="
 		$SRCS
@@ -53,7 +53,7 @@ if [ "`uname -a | grep Linux`" != "" ]; then
 	"
 elif [ "`uname -a | grep FreeBSD`" != "" ]; then
 	SUFFIX="freebsd_amd64"
-	OSCFLAGS="-fno-strict-aliasing -fPIC -Werror"
+	OSCFLAGS="-fno-strict-aliasing -fPIC "
 	OSLDFLAGS="-lpthread -fPIC -fpie"
 	SRCS="
 		$SRCS

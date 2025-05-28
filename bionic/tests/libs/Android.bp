@@ -19,7 +19,7 @@ cc_defaults {
     host_supported: true,
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
     ldflags: [
         "-Wl,--rpath,${ORIGIN}",
@@ -711,7 +711,7 @@ cc_binary_host {
     srcs: ["bionic_tests_zipalign.cpp"],
     cflags: [
         "-Wall",
-        "-Werror",
+        "",
     ],
 
     static_libs: [

@@ -311,7 +311,7 @@ CFLAGS="?"
 
 EXTRA_CFLAGS="?"
     Append these flags to CFLAGS.  This makes it possible to add flags such as
-    -Werror, while allowing the configure script to determine what other flags
+    , while allowing the configure script to determine what other flags
     are appropriate for the specified configuration.
 
     The configure script specifically checks whether an optimization flag (-O*)

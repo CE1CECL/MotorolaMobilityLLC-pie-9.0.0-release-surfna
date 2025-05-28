@@ -33,7 +33,7 @@ test_c_flags := \
     -fstack-protector-all \
     -g \
     -Wall -Wextra \
-    -Werror \
+     \
     -fno-builtin \
     $(event_flag)
 

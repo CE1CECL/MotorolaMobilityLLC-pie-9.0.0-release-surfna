@@ -178,7 +178,7 @@ bool bpf_program__is_kprobe(struct bpf_program *prog);
  * We don't need __attribute__((packed)) now since it is
  * unnecessary for 'bpf_map_def' because they are all aligned.
  * In addition, using it will trigger -Wpacked warning message,
- * and will be treated as an error due to -Werror.
+ * and will be treated as an error due to .
  */
 struct bpf_map_def {
 	unsigned int type;

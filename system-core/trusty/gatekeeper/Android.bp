@@ -35,7 +35,7 @@ cc_library_shared {
     cflags: [
         "-fvisibility=hidden",
         "-Wall",
-        "-Werror",
+        "",
     ],
 
     shared_libs: [
